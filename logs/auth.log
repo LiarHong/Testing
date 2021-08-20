@@ -1,0 +1,181 @@
+Aug 19 00:33:54 liar-virtual-machine systemd-logind[746]: New seat seat0.
+Aug 19 00:33:54 liar-virtual-machine systemd-logind[746]: Watching system buttons on /dev/input/event0 (Power Button)
+Aug 19 00:33:54 liar-virtual-machine systemd-logind[746]: Watching system buttons on /dev/input/event1 (AT Translated Set 2 keyboard)
+Aug 19 00:33:54 liar-virtual-machine gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm by (uid=0)
+Aug 19 00:33:54 liar-virtual-machine systemd-logind[746]: New session c1 of user gdm.
+Aug 19 00:33:54 liar-virtual-machine systemd: pam_unix(systemd-user:session): session opened for user gdm by (uid=0)
+Aug 19 00:33:57 liar-virtual-machine polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.42 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Aug 19 00:35:18 liar-virtual-machine systemd-logind[738]: New seat seat0.
+Aug 19 00:35:18 liar-virtual-machine systemd-logind[738]: Watching system buttons on /dev/input/event0 (Power Button)
+Aug 19 00:35:18 liar-virtual-machine systemd-logind[738]: Watching system buttons on /dev/input/event1 (AT Translated Set 2 keyboard)
+Aug 19 00:35:18 liar-virtual-machine gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm by (uid=0)
+Aug 19 00:35:18 liar-virtual-machine systemd-logind[738]: New session c1 of user gdm.
+Aug 19 00:35:18 liar-virtual-machine systemd: pam_unix(systemd-user:session): session opened for user gdm by (uid=0)
+Aug 19 00:35:22 liar-virtual-machine polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.41 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Aug 19 00:35:26 liar-virtual-machine gdm-password]: pam_unix(gdm-password:auth): Couldn't open /etc/securetty: No such file or directory
+Aug 19 00:35:31 liar-virtual-machine gdm-password]: pam_unix(gdm-password:auth): Couldn't open /etc/securetty: No such file or directory
+Aug 19 00:35:31 liar-virtual-machine gdm-password]: gkr-pam: unable to locate daemon control file
+Aug 19 00:35:31 liar-virtual-machine gdm-password]: gkr-pam: stashed password to try later in open session
+Aug 19 00:35:31 liar-virtual-machine gdm-password]: pam_unix(gdm-password:session): session opened for user liar by (uid=0)
+Aug 19 00:35:31 liar-virtual-machine systemd-logind[738]: New session 2 of user liar.
+Aug 19 00:35:31 liar-virtual-machine systemd: pam_unix(systemd-user:session): session opened for user liar by (uid=0)
+Aug 19 00:35:31 liar-virtual-machine gdm-password]: gkr-pam: gnome-keyring-daemon started properly and unlocked keyring
+Aug 19 00:35:34 liar-virtual-machine gnome-keyring-daemon[1502]: The PKCS#11 component was already initialized
+Aug 19 00:35:34 liar-virtual-machine gnome-keyring-daemon[1502]: The Secret Service was already initialized
+Aug 19 00:35:36 liar-virtual-machine polkitd(authority=local): Registered Authentication Agent for unix-session:2 (system bus name :1.79 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Aug 19 00:35:39 liar-virtual-machine gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+Aug 19 00:35:39 liar-virtual-machine systemd-logind[738]: Session c1 logged out. Waiting for processes to exit.
+Aug 19 00:35:39 liar-virtual-machine systemd-logind[738]: Removed session c1.
+Aug 19 00:35:39 liar-virtual-machine polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.41, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+Aug 19 00:36:44 liar-virtual-machine pkexec: pam_unix(polkit-1:session): session opened for user root by (uid=1000)
+Aug 19 00:36:44 liar-virtual-machine pkexec[2500]: liar: Executing command [USER=root] [TTY=unknown] [CWD=/home/liar] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+Aug 19 00:38:40 liar-virtual-machine polkitd(authority=local): Operator of unix-session:2 successfully authenticated as unix-user:liar to gain TEMPORARY authorization for action org.debian.apt.install-or-remove-packages for system-bus-name::1.100 [/usr/bin/python3 /usr/bin/update-manager --no-update --no-focus-on-map] (owned by unix-user:liar)
+Aug 19 00:43:15 liar-virtual-machine systemd-logind[738]: Watching system buttons on /dev/input/event0 (Power Button)
+Aug 19 00:43:15 liar-virtual-machine systemd-logind[738]: Watching system buttons on /dev/input/event1 (AT Translated Set 2 keyboard)
+Aug 19 00:43:45 liar-virtual-machine dbus-daemon[697]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.69" (uid=1000 pid=1494 comm="/usr/bin/pulseaudio --daemonize=no --log-target=jo" label="unconfined") interface="(unset)" member="(unset)" error name="org.freedesktop.DBus.Error.UnknownMethod" requested_reply="0" destination=":1.3" (uid=0 pid=691 comm="/usr/lib/bluetooth/bluetoothd " label="unconfined")
+Aug 19 00:43:45 liar-virtual-machine dbus-daemon[697]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.69" (uid=1000 pid=1494 comm="/usr/bin/pulseaudio --daemonize=no --log-target=jo" label="unconfined") interface="(unset)" member="(unset)" error name="org.freedesktop.DBus.Error.UnknownMethod" requested_reply="0" destination=":1.3" (uid=0 pid=691 comm="/usr/lib/bluetooth/bluetoothd " label="unconfined")
+Aug 19 00:44:29 liar-virtual-machine polkitd(authority=local): Registered Authentication Agent for unix-session:2 (system bus name :1.79 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Aug 19 00:45:02 liar-virtual-machine systemd-logind[738]: System is rebooting.
+Aug 19 00:45:02 liar-virtual-machine polkitd(authority=local): Unregistered Authentication Agent for unix-session:2 (system bus name :1.79, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+Aug 19 00:45:13 liar-virtual-machine systemd-logind[754]: New seat seat0.
+Aug 19 00:45:13 liar-virtual-machine systemd-logind[754]: Watching system buttons on /dev/input/event0 (Power Button)
+Aug 19 00:45:13 liar-virtual-machine systemd-logind[754]: Watching system buttons on /dev/input/event1 (AT Translated Set 2 keyboard)
+Aug 19 00:45:13 liar-virtual-machine gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm by (uid=0)
+Aug 19 00:45:13 liar-virtual-machine systemd-logind[754]: New session c1 of user gdm.
+Aug 19 00:45:13 liar-virtual-machine systemd: pam_unix(systemd-user:session): session opened for user gdm by (uid=0)
+Aug 19 00:45:16 liar-virtual-machine polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.41 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Aug 19 00:45:21 liar-virtual-machine gdm-password]: pam_unix(gdm-password:auth): Couldn't open /etc/securetty: No such file or directory
+Aug 19 00:45:24 liar-virtual-machine gdm-password]: pam_unix(gdm-password:auth): Couldn't open /etc/securetty: No such file or directory
+Aug 19 00:45:24 liar-virtual-machine gdm-password]: gkr-pam: unable to locate daemon control file
+Aug 19 00:45:24 liar-virtual-machine gdm-password]: gkr-pam: stashed password to try later in open session
+Aug 19 00:45:24 liar-virtual-machine gdm-password]: pam_unix(gdm-password:session): session opened for user liar by (uid=0)
+Aug 19 00:45:24 liar-virtual-machine systemd-logind[754]: New session 2 of user liar.
+Aug 19 00:45:24 liar-virtual-machine systemd: pam_unix(systemd-user:session): session opened for user liar by (uid=0)
+Aug 19 00:45:24 liar-virtual-machine gdm-password]: gkr-pam: gnome-keyring-daemon started properly and unlocked keyring
+Aug 19 00:45:27 liar-virtual-machine gnome-keyring-daemon[1369]: The PKCS#11 component was already initialized
+Aug 19 00:45:27 liar-virtual-machine gnome-keyring-daemon[1369]: The Secret Service was already initialized
+Aug 19 00:45:28 liar-virtual-machine polkitd(authority=local): Registered Authentication Agent for unix-session:2 (system bus name :1.79 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Aug 19 00:45:31 liar-virtual-machine gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+Aug 19 00:45:31 liar-virtual-machine systemd-logind[754]: Session c1 logged out. Waiting for processes to exit.
+Aug 19 00:45:31 liar-virtual-machine systemd-logind[754]: Removed session c1.
+Aug 19 00:45:31 liar-virtual-machine polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.41, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+Aug 19 00:45:41 liar-virtual-machine systemd: pam_unix(systemd-user:session): session closed for user gdm
+Aug 19 01:08:44 liar-virtual-machine gdm-password]: pam_unix(gdm-password:auth): Couldn't open /etc/securetty: No such file or directory
+Aug 19 01:08:53 liar-virtual-machine gdm-password]: pam_unix(gdm-password:auth): Couldn't open /etc/securetty: No such file or directory
+Aug 19 01:08:53 liar-virtual-machine gdm-password]: gkr-pam: unlocked login keyring
+Aug 19 01:09:00 liar-virtual-machine systemd-logind[754]: System is powering down.
+Aug 19 18:37:25 liar-virtual-machine systemd-logind[751]: New seat seat0.
+Aug 19 18:37:25 liar-virtual-machine systemd-logind[751]: Watching system buttons on /dev/input/event0 (Power Button)
+Aug 19 18:37:25 liar-virtual-machine systemd-logind[751]: Watching system buttons on /dev/input/event1 (AT Translated Set 2 keyboard)
+Aug 19 18:37:25 liar-virtual-machine gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm by (uid=0)
+Aug 19 18:37:25 liar-virtual-machine systemd-logind[751]: New session c1 of user gdm.
+Aug 19 18:37:25 liar-virtual-machine systemd: pam_unix(systemd-user:session): session opened for user gdm by (uid=0)
+Aug 19 18:37:27 liar-virtual-machine polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.40 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Aug 19 18:37:50 liar-virtual-machine dbus-daemon[715]: [system] Failed to activate service 'org.bluez': timed out (service_start_timeout=25000ms)
+Aug 19 18:41:06 liar-virtual-machine gdm-password]: pam_unix(gdm-password:auth): Couldn't open /etc/securetty: No such file or directory
+Aug 19 18:41:09 liar-virtual-machine gdm-password]: pam_unix(gdm-password:auth): Couldn't open /etc/securetty: No such file or directory
+Aug 19 18:41:09 liar-virtual-machine gdm-password]: gkr-pam: unable to locate daemon control file
+Aug 19 18:41:09 liar-virtual-machine gdm-password]: gkr-pam: stashed password to try later in open session
+Aug 19 18:41:09 liar-virtual-machine gdm-password]: pam_unix(gdm-password:session): session opened for user liar by (uid=0)
+Aug 19 18:41:09 liar-virtual-machine systemd-logind[751]: New session 2 of user liar.
+Aug 19 18:41:09 liar-virtual-machine systemd: pam_unix(systemd-user:session): session opened for user liar by (uid=0)
+Aug 19 18:41:10 liar-virtual-machine gdm-password]: gkr-pam: gnome-keyring-daemon started properly and unlocked keyring
+Aug 19 18:41:12 liar-virtual-machine gnome-keyring-daemon[2124]: The PKCS#11 component was already initialized
+Aug 19 18:41:12 liar-virtual-machine gnome-keyring-daemon[2124]: The Secret Service was already initialized
+Aug 19 18:41:14 liar-virtual-machine polkitd(authority=local): Registered Authentication Agent for unix-session:2 (system bus name :1.79 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Aug 19 18:41:18 liar-virtual-machine gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+Aug 19 18:41:18 liar-virtual-machine systemd-logind[751]: Session c1 logged out. Waiting for processes to exit.
+Aug 19 18:41:18 liar-virtual-machine systemd-logind[751]: Removed session c1.
+Aug 19 18:41:18 liar-virtual-machine polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.40, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+Aug 19 18:41:28 liar-virtual-machine systemd: pam_unix(systemd-user:session): session closed for user gdm
+Aug 19 18:41:35 liar-virtual-machine dbus-daemon[715]: [system] Failed to activate service 'org.bluez': timed out (service_start_timeout=25000ms)
+Aug 19 18:50:13 liar-virtual-machine gdm-password]: pam_unix(gdm-password:auth): Couldn't open /etc/securetty: No such file or directory
+Aug 19 18:50:17 liar-virtual-machine gdm-password]: pam_unix(gdm-password:auth): Couldn't open /etc/securetty: No such file or directory
+Aug 19 18:50:17 liar-virtual-machine gdm-password]: gkr-pam: unlocked login keyring
+Aug 19 19:17:01 liar-virtual-machine CRON[2974]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug 19 19:17:01 liar-virtual-machine CRON[2974]: pam_unix(cron:session): session closed for user root
+Aug 19 19:20:08 liar-virtual-machine sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: No such file or directory
+Aug 19 19:20:12 liar-virtual-machine sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: No such file or directory
+Aug 19 19:20:12 liar-virtual-machine sudo:     liar : TTY=pts/0 ; PWD=/home/liar ; USER=root ; COMMAND=/usr/bin/apt install apache2
+Aug 19 19:20:12 liar-virtual-machine sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Aug 19 19:20:26 liar-virtual-machine sudo: pam_unix(sudo:session): session closed for user root
+Aug 19 19:30:01 liar-virtual-machine CRON[4606]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug 19 19:30:01 liar-virtual-machine CRON[4606]: pam_unix(cron:session): session closed for user root
+Aug 19 20:17:01 liar-virtual-machine CRON[5129]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug 19 20:17:01 liar-virtual-machine CRON[5129]: pam_unix(cron:session): session closed for user root
+Aug 19 20:30:01 liar-virtual-machine CRON[5177]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug 19 20:30:01 liar-virtual-machine CRON[5177]: pam_unix(cron:session): session closed for user root
+Aug 19 20:55:16 liar-virtual-machine sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: No such file or directory
+Aug 19 20:55:18 liar-virtual-machine sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: No such file or directory
+Aug 19 20:55:18 liar-virtual-machine sudo: pam_unix(sudo:auth): authentication failure; logname= uid=1000 euid=0 tty=/dev/pts/2 ruser=liar rhost=  user=liar
+Aug 19 20:55:20 liar-virtual-machine sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: No such file or directory
+Aug 19 20:55:23 liar-virtual-machine sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: No such file or directory
+Aug 19 20:55:23 liar-virtual-machine sudo:     liar : TTY=pts/2 ; PWD=/home/liar ; USER=root ; COMMAND=/usr/bin/gedit /var/log/syslog
+Aug 19 20:55:23 liar-virtual-machine sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Aug 19 20:58:26 liar-virtual-machine sudo: pam_unix(sudo:session): session closed for user root
+Aug 19 20:58:28 liar-virtual-machine sudo:     liar : TTY=pts/2 ; PWD=/home/liar ; USER=root ; COMMAND=/usr/bin/gedit /var/log/syslog
+Aug 19 20:58:28 liar-virtual-machine sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Aug 19 21:17:01 liar-virtual-machine CRON[5546]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug 19 21:17:01 liar-virtual-machine CRON[5546]: pam_unix(cron:session): session closed for user root
+Aug 19 21:30:01 liar-virtual-machine CRON[5568]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug 19 21:30:01 liar-virtual-machine CRON[5568]: pam_unix(cron:session): session closed for user root
+Aug 19 22:17:01 liar-virtual-machine CRON[5641]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug 19 22:17:01 liar-virtual-machine CRON[5641]: pam_unix(cron:session): session closed for user root
+Aug 19 22:30:01 liar-virtual-machine CRON[5671]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug 19 22:30:01 liar-virtual-machine CRON[5671]: pam_unix(cron:session): session closed for user root
+Aug 19 23:17:01 liar-virtual-machine CRON[5774]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug 19 23:17:01 liar-virtual-machine CRON[5774]: pam_unix(cron:session): session closed for user root
+Aug 19 23:30:01 liar-virtual-machine CRON[5815]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug 19 23:30:01 liar-virtual-machine CRON[5815]: pam_unix(cron:session): session closed for user root
+Aug 19 23:43:09 liar-virtual-machine sudo: pam_unix(sudo:session): session closed for user root
+Aug 19 23:44:02 liar-virtual-machine sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: No such file or directory
+Aug 19 23:44:04 liar-virtual-machine sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: No such file or directory
+Aug 19 23:44:04 liar-virtual-machine sudo:     liar : TTY=pts/0 ; PWD=/home/liar ; USER=root ; COMMAND=/usr/sbin/a2enmod ssl
+Aug 19 23:44:04 liar-virtual-machine sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Aug 19 23:44:04 liar-virtual-machine sudo: pam_unix(sudo:session): session closed for user root
+Aug 20 00:17:01 liar-virtual-machine CRON[6002]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug 20 00:17:01 liar-virtual-machine CRON[6002]: pam_unix(cron:session): session closed for user root
+Aug 20 01:16:09 liar-virtual-machine sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: No such file or directory
+Aug 20 01:16:11 liar-virtual-machine sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: No such file or directory
+Aug 20 01:16:11 liar-virtual-machine sudo:     liar : TTY=pts/0 ; PWD=/home/liar ; USER=root ; COMMAND=/usr/sbin/a2ensite mynewsite
+Aug 20 01:16:11 liar-virtual-machine sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Aug 20 01:16:11 liar-virtual-machine sudo: pam_unix(sudo:session): session closed for user root
+Aug 20 01:17:01 liar-virtual-machine CRON[6176]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug 20 01:17:01 liar-virtual-machine CRON[6176]: pam_unix(cron:session): session closed for user root
+Aug 20 02:01:22 liar-virtual-machine sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: No such file or directory
+Aug 20 02:01:24 liar-virtual-machine sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: No such file or directory
+Aug 20 02:01:24 liar-virtual-machine sudo:     liar : TTY=pts/1 ; PWD=/etc/apache2/sites-enabled ; USER=root ; COMMAND=/usr/bin/ls /etc/ssl/private/
+Aug 20 02:01:24 liar-virtual-machine sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Aug 20 02:01:24 liar-virtual-machine sudo: pam_unix(sudo:session): session closed for user root
+Aug 20 02:17:01 liar-virtual-machine CRON[6501]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug 20 02:17:01 liar-virtual-machine CRON[6501]: pam_unix(cron:session): session closed for user root
+Aug 20 02:21:42 liar-virtual-machine sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: No such file or directory
+Aug 20 02:21:44 liar-virtual-machine sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: No such file or directory
+Aug 20 02:21:44 liar-virtual-machine sudo:     liar : TTY=pts/0 ; PWD=/home/liar ; USER=root ; COMMAND=/usr/bin/gedit /etc/apache2/sites-available/default-ssl.conf
+Aug 20 02:21:44 liar-virtual-machine sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Aug 20 02:26:39 liar-virtual-machine sudo: pam_unix(sudo:session): session closed for user root
+Aug 20 02:28:42 liar-virtual-machine sudo:     liar : TTY=pts/0 ; PWD=/home/liar ; USER=root ; COMMAND=/usr/bin/cp server.crt /etc/ssl/certs/
+Aug 20 02:28:42 liar-virtual-machine sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Aug 20 02:28:42 liar-virtual-machine sudo: pam_unix(sudo:session): session closed for user root
+Aug 20 02:29:05 liar-virtual-machine sudo:     liar : TTY=pts/0 ; PWD=/home/liar ; USER=root ; COMMAND=/usr/bin/cp server.key /etc/ssl/private/
+Aug 20 02:29:05 liar-virtual-machine sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Aug 20 02:29:05 liar-virtual-machine sudo: pam_unix(sudo:session): session closed for user root
+Aug 20 02:30:52 liar-virtual-machine sudo:     liar : TTY=pts/0 ; PWD=/home/liar ; USER=root ; COMMAND=/usr/bin/ls /etc/ssl/private/
+Aug 20 02:30:52 liar-virtual-machine sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Aug 20 02:30:52 liar-virtual-machine sudo: pam_unix(sudo:session): session closed for user root
+Aug 20 02:32:13 liar-virtual-machine sudo:     liar : TTY=pts/0 ; PWD=/home/liar ; USER=root ; COMMAND=/usr/bin/gedit /etc/apache2/sites-available/default-ssl.conf
+Aug 20 02:32:13 liar-virtual-machine sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Aug 20 02:34:35 liar-virtual-machine sudo: pam_unix(sudo:session): session closed for user root
+Aug 20 02:39:55 liar-virtual-machine sudo:     liar : TTY=pts/0 ; PWD=/home/liar ; USER=root ; COMMAND=/usr/sbin/a2ensite default-ssl.conf
+Aug 20 02:39:55 liar-virtual-machine sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Aug 20 02:39:55 liar-virtual-machine sudo: pam_unix(sudo:session): session closed for user root
+Aug 20 02:40:58 liar-virtual-machine sudo:     liar : TTY=pts/0 ; PWD=/home/liar ; USER=root ; COMMAND=/usr/bin/systemctl restart apache2.service
+Aug 20 02:40:58 liar-virtual-machine sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Aug 20 02:40:58 liar-virtual-machine sudo: pam_unix(sudo:session): session closed for user root
+Aug 20 02:43:40 liar-virtual-machine sudo:     liar : TTY=pts/0 ; PWD=/home/liar ; USER=root ; COMMAND=/usr/bin/systemctl reload apache2
+Aug 20 02:43:40 liar-virtual-machine sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Aug 20 02:43:40 liar-virtual-machine sudo: pam_unix(sudo:session): session closed for user root
+Aug 20 03:10:01 liar-virtual-machine CRON[7054]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug 20 03:10:01 liar-virtual-machine CRON[7054]: pam_unix(cron:session): session closed for user root
+Aug 20 03:17:01 liar-virtual-machine CRON[7102]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug 20 03:17:01 liar-virtual-machine CRON[7102]: pam_unix(cron:session): session closed for user root
