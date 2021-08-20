@@ -1,0 +1,32 @@
+Switch>enable
+Switch#conf t
+Switch(config)#hostname TTC
+TTC(config)#ip domain-name google.com
+TTC(config)#crypto key generate rsa general-keys modulus 1024
+TTC(config)#username ttc privilege 15 secret 99024356
+TTC(config)#line vty 0 4
+TTC(config-line)#login local
+TTC(config-line)#transport input ssh
+TTC(config-line)#exit
+TTC(config)#vlan 100
+TTC(config-vlan)#name VLAN100
+TTC(config-vlan)#exit
+TTC(config)#interface range gigabitEthernet 1/0/1-10
+TTC(config-if-range)#switchport mode access
+TTC(config-if-range)#switchport access vlan 100
+TTC(config-if-range)#exit
+TTC(config)#vlan 200
+TTC(config-vlan)#name VLAN200
+TTC(config-vlan)#exit
+TTC(config)#interface range gigabitEthernet 1/0/11-20
+TTC(config-if-range)#switchport mode access
+TTC(config-if-range)#switchport access vlan 200
+TTC(config-if-range)#exit
+TTC(config)#interface gigabitEther 1/0/24
+TTC(config-if)#switchport trunk encapsulation dot1q
+TTC(config-if)#switchport mode trunk
+TTC(config-if)#switchport access vlan 200
+TTC(config-if)#exit
+TTC(config)#ip default-gateway 172.16.1.254
+TTC(config)#exit
+TTC#
